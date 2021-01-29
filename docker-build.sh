@@ -1,1 +1,2 @@
-docker build --no-cache --pull -t api_nevo . -f ./Nevo.Api/dockerfile
+docker build --no-cache --pull -t codedbyjim/nevo-api . -f ./Nevo.Api/dockerfile
+

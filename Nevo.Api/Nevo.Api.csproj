@@ -37,7 +37,6 @@
         <Link>Nevo.Contract.V1.xml</Link>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
-      <None Remove="Nevo.Api.xml" />
       <Content Include="..\Nevo.Data\Nevo.Data.xml">
         <Link>Nevo.Data.xml</Link>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
