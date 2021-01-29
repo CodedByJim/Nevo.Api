@@ -1,0 +1,28 @@
+**/obj/
+*Development.json
+.idea/
+**/bin/
+
+# testing
+/coverage
+
+# production
+**/build/
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Nevo docs
+/Nevo.Data/SQLite/docs/
+
+#Other
+*.DotSettings
+*.DotSettings.*

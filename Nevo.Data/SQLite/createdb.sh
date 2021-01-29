@@ -1,0 +1,1 @@
+sqlite3 nevo.db < create.sql

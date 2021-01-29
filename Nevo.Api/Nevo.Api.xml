@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nevo.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Nevo.Api.Assemblies">
+            <summary>
+                List of assemblies.
+            </summary>
+        </member>
+        <member name="P:Nevo.Api.Assemblies.Api">
+            <summary>
+                The Api assembly.
+            </summary>
+        </member>
+        <member name="P:Nevo.Api.Assemblies.Core">
+            <summary>
+                The Core assembly.
+            </summary>
+        </member>
+        <member name="P:Nevo.Api.Assemblies.Business">
+            <summary>
+                The Business assembly.
+            </summary>
+        </member>
+        <member name="P:Nevo.Api.Assemblies.Data">
+            <summary>
+                The Data assembly.
+            </summary>
+        </member>
+        <member name="P:Nevo.Api.Assemblies.ContractV1">
+            <summary>
+                The Contract assembly.
+            </summary>
+        </member>
+        <member name="P:Nevo.Api.Assemblies.All">
+            <summary>
+                All assemblies.
+            </summary>
+        </member>
+        <member name="T:Nevo.Api.Bootstrapper">
+            <summary>
+                Bootstraps the simple-injector DI container.
+            </summary>
+        </member>
+        <member name="M:Nevo.Api.Bootstrapper.Bootstrap(SimpleInjector.Container,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+                Setup the container.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="configuration">The configuration.</param>
+            <exception cref="T:System.ArgumentNullException">If container is null.</exception>
+        </member>
+        <member name="T:Nevo.Api.Controllers.GroupsController">
+            <summary>
+                Products are categorized into groups.
+            </summary>
+        </member>
+        <member name="M:Nevo.Api.Controllers.GroupsController.#ctor(Coded.Core.Handler.IHandler{Nevo.Contract.V1.Groups.GetGroupsRequest,Nevo.Contract.V1.Groups.GetGroupsResponse},Coded.Core.Handler.IHandler{Nevo.Contract.V1.Groups.GetGroupRequest,Nevo.Contract.V1.Groups.GetGroupResponse},Coded.Core.Handler.IHandler{Nevo.Contract.V1.Groups.GetGroupProductsRequest,Nevo.Contract.V1.Groups.GetGroupProductsResponse})">
+            <summary>
+                Create a new <see cref="T:Nevo.Api.Controllers.GroupsController" />.
+            </summary>
+            <param name="getGroupsHandler">Get groups request handler.</param>
+            <param name="getGroupHandler">Get group request handler.</param>
+            <param name="getGroupProductsHandler">Get group products request handler</param>
+        </member>
+        <member name="M:Nevo.Api.Controllers.GroupsController.GetGroups(System.Threading.CancellationToken)">
+            <summary>
+                List all groups.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>All groups.</returns>
+        </member>
+        <member name="M:Nevo.Api.Controllers.GroupsController.GetGroup(Nevo.Contract.V1.Groups.GetGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+                Get a single group.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The group.</returns>
+        </member>
+        <member name="M:Nevo.Api.Controllers.GroupsController.GetGroupProducts(Nevo.Contract.V1.Groups.GetGroupProductsRequest,System.Threading.CancellationToken)">
+            <summary>
+                Gets the products within a group.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The products within the group.</returns>
+        </member>
+        <member name="T:Nevo.Api.Controllers.NutrientsController">
+            <summary>
+                Information about the nutrients.
+            </summary>
+        </member>
+        <member name="M:Nevo.Api.Controllers.NutrientsController.#ctor(Coded.Core.Handler.IHandler{Nevo.Contract.V1.Nutrients.GetNutrientsRequest,Nevo.Contract.V1.Nutrients.GetNutrientsResponse},Coded.Core.Handler.IHandler{Nevo.Contract.V1.Nutrients.GetNutrientRequest,Nevo.Contract.V1.Nutrients.GetNutrientResponse},Coded.Core.Handler.IHandler{Nevo.Contract.V1.Nutrients.GetNutrientProductsRequest,Nevo.Contract.V1.Nutrients.GetNutrientProductsResponse})">
+            <summary>
+                Nutrient sources.
+            </summary>
+            <param name="getNutrientsHandler">Request handler for get nutrients.</param>
+            <param name="getNutrientHandler">Request handler for get nutrient.</param>
+            <param name="getNutrientProductsHandler">Request handler for get nutrient products.</param>
+        </member>
+        <member name="M:Nevo.Api.Controllers.NutrientsController.GetNutrients(System.Threading.CancellationToken)">
+            <summary>
+                Get all known nutrients.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>All known nutrients.</returns>
+        </member>
+        <member name="M:Nevo.Api.Controllers.NutrientsController.GetNutrient(Nevo.Contract.V1.Nutrients.GetNutrientRequest,System.Threading.CancellationToken)">
+            <summary>
+                Get a single nutrient.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A single nutrient.</returns>
+        </member>
+        <member name="M:Nevo.Api.Controllers.NutrientsController.GetNutrientProducts(Nevo.Contract.V1.Nutrients.GetNutrientProductsRequest,System.Threading.CancellationToken)">
+            <summary>
+                List products containing a nutrient, ordered by percentage descending.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>A single nutrient.</returns>
+        </member>
+        <member name="T:Nevo.Api.Controllers.ProductsController">
+            <summary>
+                Data about products.
+            </summary>
+        </member>
+        <member name="M:Nevo.Api.Controllers.ProductsController.#ctor(Coded.Core.Handler.IHandler{Nevo.Contract.V1.Products.GetProductsRequest,Nevo.Contract.V1.Products.GetProductsResponse},Coded.Core.Handler.IHandler{Nevo.Contract.V1.Products.GetProductRequest,Nevo.Contract.V1.Products.GetProductResponse},Coded.Core.Handler.IHandler{Nevo.Contract.V1.Products.GetProductNutrientsRequest,Nevo.Contract.V1.Products.GetProductNutrientsResponse})">
+            <summary>
+                Create a new <see cref="T:Nevo.Api.Controllers.ProductsController" />.
+            </summary>
+            <param name="getProductsHandler">The get products request handler.</param>
+            <param name="getProductHandler">The get product request handler.</param>
+            <param name="getProductNutrientHandler">The get product nutrient handler.</param>
+        </member>
+        <member name="M:Nevo.Api.Controllers.ProductsController.GetProducts(Nevo.Contract.V1.Products.GetProductsRequest,System.Threading.CancellationToken)">
+            <summary>
+                Get all products.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>List of products.</returns>
+        </member>
+        <member name="M:Nevo.Api.Controllers.ProductsController.GetProduct(Nevo.Contract.V1.Products.GetProductRequest,System.Threading.CancellationToken)">
+            <summary>
+                Get a single product.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The product.</returns>
+        </member>
+        <member name="M:Nevo.Api.Controllers.ProductsController.GetProductNutrients(Nevo.Contract.V1.Products.GetProductNutrientsRequest,System.Threading.CancellationToken)">
+            <summary>
+                Get the product and it's nutrients
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The product and it's nutrients</returns>
+        </member>
+        <member name="T:Nevo.Api.Controllers.SourcesController">
+            <summary>
+                References to sources used to produce the data
+            </summary>
+        </member>
+        <member name="M:Nevo.Api.Controllers.SourcesController.#ctor(Coded.Core.Handler.IHandler{Nevo.Contract.V1.Sources.GetSourceRequest,Nevo.Contract.V1.Sources.GetSourceResponse},Coded.Core.Handler.IHandler{Nevo.Contract.V1.Sources.GetSourcesRequest,Nevo.Contract.V1.Sources.GetSourcesResponse},Coded.Core.Handler.IHandler{Nevo.Contract.V1.Sources.GetSourceNutrientsRequest,Nevo.Contract.V1.Sources.GetSourceNutrientsResponse})">
+            <summary>
+                Create a new sources controller
+            </summary>
+            <param name="getSourceHandler">The handler used to handle <see cref="T:Nevo.Contract.V1.Sources.GetSourceRequest" /></param>
+            <param name="getSourcesHandler">The handler used to handle ><see cref="T:Nevo.Contract.V1.Sources.GetSourcesRequest" /></param>
+            <param name="getSourceNutrientsHandler">The handler used to handle <see cref="T:Nevo.Contract.V1.Sources.GetSourceNutrientsRequest" />.</param>
+        </member>
+        <member name="M:Nevo.Api.Controllers.SourcesController.GetSources(Nevo.Contract.V1.Sources.GetSourcesRequest,System.Threading.CancellationToken)">
+            <summary>
+                Get all known sources
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>All known sources</returns>
+        </member>
+        <member name="M:Nevo.Api.Controllers.SourcesController.GetSource(Nevo.Contract.V1.Sources.GetSourceRequest,System.Threading.CancellationToken)">
+            <summary>
+                Get a single source
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The source</returns>
+        </member>
+        <member name="M:Nevo.Api.Controllers.SourcesController.GetSourceNutrients(Nevo.Contract.V1.Sources.GetSourceNutrientsRequest,System.Threading.CancellationToken)">
+            <summary>
+                Get the nutritional values found in the source
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The source</returns>
+        </member>
+        <member name="T:Nevo.Api.Startup">
+            <summary>
+                Routines used at startup
+            </summary>
+        </member>
+        <member name="M:Nevo.Api.Startup.#ctor">
+            <summary>
+                Startup the application
+            </summary>
+        </member>
+        <member name="M:Nevo.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+                Configure the services
+            </summary>
+            <param name="services">The current service collection</param>
+        </member>
+        <member name="M:Nevo.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+                Configure the application
+            </summary>
+            <param name="app">The application builder</param>
+            <param name="env">Environment</param>
+            <param name="apiVersionDescriptionProvider">The api version description provider</param>
+            <param name="configuration">The current configuration</param>
+        </member>
+        <member name="T:Nevo.Api.SwaggerConfigureOptions">
+            <summary>
+                Used to configure swagger options
+            </summary>
+        </member>
+        <member name="M:Nevo.Api.SwaggerConfigureOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+                Create a new Swagger configure options
+            </summary>
+            <param name="provider">The api version description provider</param>
+        </member>
+        <member name="M:Nevo.Api.SwaggerConfigureOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+                Configure swagger
+            </summary>
+            <param name="options">The options</param>
+        </member>
+    </members>
+</doc>

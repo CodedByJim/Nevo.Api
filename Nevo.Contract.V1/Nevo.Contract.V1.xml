@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nevo.Contract.V1</name>
+    </assembly>
+    <members>
+        <member name="T:Nevo.Contract.V1.BasePaginatedRequest`1">
+            <summary>
+                Base class for paginated requests.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.BasePaginatedRequest`1.Page">
+            <summary>
+                Which page to retrieve, 100 results per page, starts at zero (0).
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.BasePaginatedResponse">
+            <summary>
+                Base class for paginated response.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.BasePaginatedResponse.Page">
+            <summary>
+                The requested page.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.BasePaginatedResponse.Count">
+            <summary>
+                The number of items in this response.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.BasePaginatedResponse.Total">
+            <summary>
+                The number of items that exist in total.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.BasePaginatedResponse.TotalPages">
+            <summary>
+                The number of pages for products with this nutrient in total.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.BasePaginatedResponse.HasNext">
+            <summary>
+                True if there is another page.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Groups.GetGroupProductsRequest">
+            <summary>
+                Get products within a group.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Groups.GetGroupProductsRequest.GroupCode">
+            <summary>
+                The group code/
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Groups.GetGroupProductsResponse">
+            <summary>
+                Response to get group product request.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Groups.GetGroupProductsResponse.GroupCode">
+            <summary>
+                Group code.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Groups.GetGroupProductsResponse.Products">
+            <summary>
+                Products within the group.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Groups.GetGroupProductsResponse.Count">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Contract.V1.Groups.GetGroupRequest">
+            <summary>
+                Get a single group by group code.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Groups.GetGroupRequest.GroupCode">
+            <summary>
+                The group code.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Groups.GetGroupResponse">
+            <summary>
+                Response containing a single group.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Groups.GetGroupResponse.Group">
+            <summary>
+                A product group.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Groups.GetGroupResponse.ProductCount">
+            <summary>
+                The number of products in this group.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Groups.GetGroupsRequest">
+            <summary>
+                List all groups.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Groups.GetGroupsResponse">
+            <summary>
+                Response to get groups request.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Groups.GetGroupsResponse.Groups">
+            <summary>
+                List of groups.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Groups.GetGroupsResponse.Count">
+            <summary>
+                Total number of groups in the response.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Nutrients.GetNutrientProductsRequest">
+            <summary>
+                Retrieve products containing a nutrient, ordered by percentage descending.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Nutrients.GetNutrientProductsRequest.NutrientCode">
+            <summary>
+                The nutrient to lookup products.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Nutrients.GetNutrientProductsResponse">
+            <summary>
+                Products containing a nutrient, ordered by percentage descending.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Nutrients.GetNutrientProductsResponse.NutrientCode">
+            <summary>
+                The nutrient code.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Nutrients.GetNutrientProductsResponse.Products">
+            <summary>
+                Products containing nutrient, ordered by percentage descending.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Nutrients.GetNutrientProductsResponse.Count">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Contract.V1.Nutrients.GetNutrientRequest">
+            <summary>
+                Retrieve a singe nutrient by code.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Nutrients.GetNutrientRequest.NutrientCode">
+            <summary>
+                The (case sensitive) nutrient code.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Nutrients.GetNutrientResponse">
+            <summary>
+                A response containing a single nutrient.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Nutrients.GetNutrientResponse.Nutrient">
+            <summary>
+                Nutrient.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Nutrients.GetNutrientsRequest">
+            <summary>
+                List all nutrients.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Nutrients.GetNutrientsResponse">
+            <summary>
+                Returns the request nutrients.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Nutrients.GetNutrientsResponse.Nutrients">
+            <summary>
+                List of all nutrients.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Nutrients.GetNutrientsResponse.Count">
+            <summary>
+                Total number of Nutrients in the response.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Products.GetProductNutrientsRequest">
+            <summary>
+                Get the products nutrients.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Products.GetProductNutrientsRequest.ProductCode">
+            <summary>
+                The product code.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Products.GetProductNutrientsResponse">
+            <summary>
+                The Product nutrients.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Products.GetProductNutrientsResponse.Product">
+            <summary>
+                The product.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Products.GetProductNutrientsResponse.Nutrients">
+            <summary>
+                The nutrients in the product ordered by percentage.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Products.GetProductNutrientsResponse.NutrientCount">
+            <summary>
+                The number of nutrients returned.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Products.GetProductRequest">
+            <summary>
+                Get product request.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Products.GetProductRequest.ProductCode">
+            <summary>
+                The product code.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Products.GetProductResponse">
+            <summary>
+                Get product response.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Products.GetProductResponse.Product">
+            <summary>
+                The product.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Products.GetProductsRequest">
+            <summary>
+                Get all products request.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Products.GetProductsResponse">
+            <summary>
+                Get products response.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Products.GetProductsResponse.Products">
+            <summary>
+                The products.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Products.GetProductsResponse.Count">
+            <summary>
+                The product count.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Sources.GetSourceNutrientsRequest">
+            <summary>
+                Gets the nutrient values described in the source.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Sources.GetSourceNutrientsRequest.SourceId">
+            <summary>
+                The source id.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Sources.GetSourceNutrientsResponse">
+            <summary>
+                Response to a get source nutrients request.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Sources.GetSourceNutrientsResponse.Nutrients">
+            <summary>
+                The nutrient values described in this source.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Sources.GetSourceNutrientsResponse.Count">
+            <summary>
+                The number of nutrients in this response.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Sources.GetSourceRequest">
+            <summary>
+                Request a source.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Sources.GetSourceRequest.SourceId">
+            <summary>
+                The source id.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Sources.GetSourceResponse">
+            <summary>
+                The response to a get source request.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Sources.GetSourceResponse.Source">
+            <summary>
+                The source found.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Sources.GetSourcesRequest">
+            <summary>
+                Get all sources.
+            </summary>
+        </member>
+        <member name="T:Nevo.Contract.V1.Sources.GetSourcesResponse">
+            <summary>
+                The response to a get sources request.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Sources.GetSourcesResponse.Sources">
+            <summary>
+                The sources.
+            </summary>
+        </member>
+        <member name="P:Nevo.Contract.V1.Sources.GetSourcesResponse.Count">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

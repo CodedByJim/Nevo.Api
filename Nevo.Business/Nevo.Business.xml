@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nevo.Business</name>
+    </assembly>
+    <members>
+        <member name="T:Nevo.Business.EventLogger`1">
+            <summary>
+                Logs all events.
+            </summary>
+            <typeparam name="TEvent">The type of the consumed event</typeparam>
+        </member>
+        <member name="M:Nevo.Business.EventLogger`1.#ctor(Castle.Core.Logging.ILogger)">
+            <summary>
+                Create a new event logger.
+            </summary>
+            <param name="logger">The logger</param>
+        </member>
+        <member name="M:Nevo.Business.EventLogger`1.ConsumeAsync(`0,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Business.Groups.GetGroupHandler">
+            <summary>
+                Handler that handles get group requests.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Groups.GetGroupHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.Groups.CountProductsByGroup,Nevo.Data.Primitive{System.Int32}},Coded.Core.Query.IQuery{Nevo.Data.SelectOne{Nevo.Data.Groups.Group,System.Int32},Nevo.Data.Groups.Group})">
+            <summary>
+                Create a new <see cref="T:Nevo.Business.Groups.GetGroupHandler" />.
+            </summary>
+            <param name="countProductsByGroupQuery">The query used to count products by group.</param>
+            <param name="groupQuery">Group query.</param>
+        </member>
+        <member name="M:Nevo.Business.Groups.GetGroupHandler.Handle(Nevo.Contract.V1.Groups.GetGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+                Handles the <see cref="T:Nevo.Contract.V1.Groups.GetGroupRequest" />.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The groups found.</returns>
+        </member>
+        <member name="T:Nevo.Business.Groups.GetGroupProductsHandler">
+            <summary>
+                Handles the get group products request.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Groups.GetGroupProductsHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.Groups.GetProductsByGroup,Nevo.Data.EquatableList{Nevo.Data.Groups.GroupProduct}},Coded.Core.Query.IQuery{Nevo.Data.Groups.CountProductsByGroup,Nevo.Data.Primitive{System.Int32}})">
+            <summary>
+                Create a new <see cref="T:Nevo.Business.Groups.GetGroupProductsHandler" />.
+            </summary>
+            <param name="getProductsByGroup">The get products by group query.</param>
+            <param name="countProductsByGroup">The count products by group query.</param>
+        </member>
+        <member name="M:Nevo.Business.Groups.GetGroupProductsHandler.Handle(Nevo.Contract.V1.Groups.GetGroupProductsRequest,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Business.Groups.GetGroupsHandler">
+            <summary>
+                Handles <see cref="T:Nevo.Contract.V1.Groups.GetGroupRequest" />.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Groups.GetGroupsHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.SelectAll{Nevo.Data.Groups.Group},Nevo.Data.EquatableList{Nevo.Data.Groups.Group}})">
+            <summary>
+                Create a new <see cref="T:Nevo.Business.Groups.GetGroupHandler" />.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Groups.GetGroupsHandler.Handle(Nevo.Contract.V1.Groups.GetGroupsRequest,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Business.Nutrients.GetNutrientHandler">
+            <summary>
+                Handles <see cref="T:Nevo.Contract.V1.Nutrients.GetNutrientRequest" />.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Nutrients.GetNutrientHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.SelectOne{Nevo.Data.Nutrients.Nutrient,System.String},Nevo.Data.Nutrients.Nutrient})">
+            <summary>
+                Create a new <see cref="T:Nevo.Business.Nutrients.GetNutrientHandler" />.
+            </summary>
+            <param name="nutrientQuery">The query to retrieve a nutrient.</param>
+        </member>
+        <member name="M:Nevo.Business.Nutrients.GetNutrientHandler.Handle(Nevo.Contract.V1.Nutrients.GetNutrientRequest,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Business.Nutrients.GetNutrientProductsHandler">
+            <summary>
+                Handles the GetNutrientProducts request.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Nutrients.GetNutrientProductsHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.Nutrients.GetProductsByNutrient,Nevo.Data.EquatableList{Nevo.Data.Nutrients.NutrientProduct}},Coded.Core.Query.IQuery{Nevo.Data.Nutrients.CountProductsByNutrient,Nevo.Data.Primitive{System.Int32}})">
+            <summary>
+                Create a new <see cref="T:Nevo.Business.Nutrients.GetNutrientProductsHandler" />.
+            </summary>
+            <param name="getProductsByNutrientQuery">The query to get the products by nutrient.</param>
+            <param name="countProductsByNutrientQuery">The query to count the products by nutrient.</param>
+        </member>
+        <member name="M:Nevo.Business.Nutrients.GetNutrientProductsHandler.Handle(Nevo.Contract.V1.Nutrients.GetNutrientProductsRequest,System.Threading.CancellationToken)">
+            <summary>
+                Handle the <see cref="T:Nevo.Contract.V1.Nutrients.GetNutrientProductsRequest" /> request.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The products containing the nutrient.</returns>
+        </member>
+        <member name="T:Nevo.Business.Nutrients.GetNutrientsHandler">
+            <summary>
+                Handles <see cref="T:Nevo.Contract.V1.Nutrients.GetNutrientRequest" />.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Nutrients.GetNutrientsHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.SelectAll{Nevo.Data.Nutrients.Nutrient},Nevo.Data.EquatableList{Nevo.Data.Nutrients.Nutrient}})">
+            <summary>
+                Create a new <see cref="T:Nevo.Business.Nutrients.GetNutrientHandler" />.
+            </summary>
+            <param name="getNutrientsQuery">The query used to get nutrients.</param>
+        </member>
+        <member name="M:Nevo.Business.Nutrients.GetNutrientsHandler.Handle(Nevo.Contract.V1.Nutrients.GetNutrientsRequest,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Business.Products.GetProductHandler">
+            <summary>
+                Handles <see cref="T:Nevo.Contract.V1.Products.GetProductRequest" />.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Products.GetProductHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.SelectOne{Nevo.Data.Products.Product,System.Int32},Nevo.Data.Products.Product})">
+            <summary>
+                Create a new <see cref="T:Nevo.Business.Products.GetProductHandler" />.
+            </summary>
+            <param name="getProductQuery">The query to retrieve a product by id.</param>
+        </member>
+        <member name="M:Nevo.Business.Products.GetProductHandler.Handle(Nevo.Contract.V1.Products.GetProductRequest,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Business.Products.GetProductNutrientsHandler">
+            <summary>
+                Handles <see cref="T:Nevo.Contract.V1.Products.GetProductNutrientsRequest" />.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Products.GetProductNutrientsHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.Products.GetNutrientsByProduct,Nevo.Data.EquatableList{Nevo.Data.Products.ProductNutrient}},Coded.Core.Query.IQuery{Nevo.Data.SelectOne{Nevo.Data.Products.Product,System.Int32},Nevo.Data.Products.Product})">
+            <summary>
+                Create a new <see cref="T:Nevo.Business.Products.GetProductNutrientsHandler" />.
+            </summary>
+            <param name="getNutrientsByProductQuery">The query used to get nutrients by product.</param>
+            <param name="getProductQuery">The query used to get products.</param>
+        </member>
+        <member name="M:Nevo.Business.Products.GetProductNutrientsHandler.Handle(Nevo.Contract.V1.Products.GetProductNutrientsRequest,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Business.Products.GetProductsHandler">
+            <summary>
+                Handles the <see cref="T:Nevo.Contract.V1.Products.GetProductRequest" />.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Products.GetProductsHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.Products.GetProducts,Nevo.Data.EquatableList{Nevo.Data.Products.Product}},Coded.Core.Query.IQuery{Nevo.Data.Count{Nevo.Data.Products.Product},Nevo.Data.Primitive{System.Int32}})">
+            <summary>
+                Create a new get products handler.
+            </summary>
+            <param name="getProductsQuery">The query used to get all products.</param>
+            <param name="countProductsQuery">The query used to count all products.</param>
+        </member>
+        <member name="M:Nevo.Business.Products.GetProductsHandler.Handle(Nevo.Contract.V1.Products.GetProductsRequest,System.Threading.CancellationToken)">
+            <summary>
+                Handles the get products request.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The products.</returns>
+        </member>
+        <member name="T:Nevo.Business.Sources.GetSourceHandler">
+            <summary>
+                Get source handler.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Sources.GetSourceHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.SelectOne{Nevo.Data.Sources.Source,System.String},Nevo.Data.Sources.Source})">
+            <summary>
+                Create a new get source handler.
+            </summary>
+            <param name="sourceQuery">The query to get the source.</param>
+        </member>
+        <member name="M:Nevo.Business.Sources.GetSourceHandler.Handle(Nevo.Contract.V1.Sources.GetSourceRequest,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Business.Sources.GetSourceNutrientsHandler">
+            <summary>
+                Handles the <see cref="T:Nevo.Contract.V1.Sources.GetSourceNutrientsRequest" />.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Sources.GetSourceNutrientsHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.Sources.GetNutrientsBySource,Nevo.Data.EquatableList{Nevo.Data.Sources.SourceNutrient}},Coded.Core.Query.IQuery{Nevo.Data.Sources.CountNutrientsBySource,Nevo.Data.Primitive{System.Int32}})">
+            <summary>
+                Create a new <see cref="T:Nevo.Business.Sources.GetSourceNutrientsHandler" />.
+            </summary>
+            <param name="getNutrientsBySourceQuery">Query used to get nutrients by source.</param>
+            <param name="countNutrientsBySourceQuery">Query used to count nutrients by source.</param>
+        </member>
+        <member name="M:Nevo.Business.Sources.GetSourceNutrientsHandler.Handle(Nevo.Contract.V1.Sources.GetSourceNutrientsRequest,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Business.Sources.GetSourcesHandler">
+            <summary>
+                Handler for the get sources request.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Sources.GetSourcesHandler.#ctor(Coded.Core.Query.IQuery{Nevo.Data.Count{Nevo.Data.Sources.Source},Nevo.Data.Primitive{System.Int32}},Coded.Core.Query.IQuery{Nevo.Data.Sources.GetSources,Nevo.Data.EquatableList{Nevo.Data.Sources.Source}})">
+            <summary>
+                Create a new get sources handler.
+            </summary>
+        </member>
+        <member name="M:Nevo.Business.Sources.GetSourcesHandler.Handle(Nevo.Contract.V1.Sources.GetSourcesRequest,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,134 @@
+Europese_nutrientcode,Nederlandse_nutrientnaam,Meeteenheid_nutrient,English_component_name
+ENERCJ,Energie,kJ,"energy kJ, total metabolisable"
+ENERCC,Energie,kcal,"energy kcal, total metabolisable"
+PROT,"Eiwit totaal",g,"protein, total"
+PROTPL,"Eiwit plantaardig",g,"protein, plant"
+PROTAN,"Eiwit dierlijk",g,"protein, animal"
+NT,"Stikstof totaal",g,"nitrogen, total"
+CHO,"Koolhydraten totaal",g,carbohydrate
+SUGAR,"Mono en disacchariden totaal",g,"sugars, total"
+STARCH,"Polysacchariden totaal",g,"starch, total"
+POLYL,"Polyolen totaal",g,"polyols, total"
+FIBT,"Voedingsvezel totaal",g,"fibre, total dietary"
+ALC,"Alcohol totaal",g,alcohol
+WATER,Water,g,water
+OA,"Organische zuren totaal",g,"organic acids, total"
+FAT,"Vet totaal",g,"fat, total"
+FACID,"Som van de vetzuren",g,"fatty acids, total"
+FASAT,"Vetzuren totaal verzadigd",g,"fatty acids, total saturated"
+FAMSCIS,"Vetzuren enkelv onverz cis",g,"fatty acids, monounsaturated, total cis"
+FAPU,"Vetzuren meerv onverz",g,"fatty acids, total polyunsaturated"
+FAPUN3,"Vetzuren n-3 meerv onverz cis",g,"fatty acids, polyunsaturated, total n-3"
+FAPUN6,"Vetzuren n-6 meerv onverz  cis",g,"fatty acids, polyunsaturated, total n-6"
+FATRS,"Vetzuren totaal trans",g,"fatty acids, total trans"
+F4:0,C4:0,g,"fatty acid 4:0 (butyric acid)"
+F6:0,C6:0,g,"fatty acid 6:0 (caproic acid)"
+F8:0,C8:0,g,"fatty acid 8:0 (caprylic acid)"
+F10:0,C10:0,g,"fatty acid 10:0 (capric acid)"
+F11:0,C11:0,g,"fatty acid 11:0"
+F12:0,C12:0,g,"fatty acid 12:0 (lauric acid)"
+F13:0,C13:0,g,"fatty acid 13:0 (tridecanoic acid)"
+F14:0,C14:0,g,"fatty acid 14:0 (myristic acid)"
+F15:0,C15:0,g,"fatty acid 15:0 (pentadecylic acid)"
+F16:0,C16:0,g,"fatty acid 16:0 (palmitic acid)"
+F17:0,C17:0,g,"fatty acid 17:0 (margaric acid)"
+F18:0,C18:0,g,"fatty acid 18:0 (stearic acid)"
+F19:0,C19:0,g,"fatty acid 19:0"
+F20:0,C20:0,g,"fatty acid 20:0 (arachidic acid)"
+F21:0,C21:0,g,"fatty acid 21:0"
+F22:0,C22:0,g,"fatty acid 22:0 (behenic acid)"
+F23:0,C23:0,g,"fatty acid 23:0 (tricosanoic acid)"
+F24:0,C24:0,g,"fatty acid 24:0 (lignoceric acid)"
+F25:0,C25:0,g,"fatty acid 25:0"
+F26:0,C26:0,g,"fatty acid 26:0"
+FASATXR,"Verz vetz rest",g,"fatty acids, saturated, remainder"
+F10:1CIS,"C10:1 cis totaal",g,"fatty acid 10:1 cis"
+F12:1CIS,"C12:1 cis totaal",g,"fatty acid 12:1 cis"
+F14:1CIS,"C14:1 cis totaal",g,"fatty acid 14:1 cis"
+F16:1CIS,"C16:1 cis totaal",g,"fatty acid 16:1 cis"
+F18:1CIS,"C18:1 cis totaal",g,"fatty acid 18:1 cis"
+F20:1CIS,"C20:1 cis totaal",g,"fatty acid 20:1 cis"
+F22:1CIS,"C22:1 cis totaal",g,"fatty acid 22:1 cis"
+F24:1CIS,"C24:1 cis totaal",g,"fatty acid 24:1 cis"
+FAMSCXR,"Eovz cis rest",g,"fatty acids, monounsaturated, cis, remainder"
+F18:2CN6,"C18:2 n-6 cis (linolzuur)",g,"fatty acid 18:2 n-6 cis,cis"
+F18:2CN9,"C18:2 n-9 cis",g,"fatty acid 18:2 n-9 cis,cis"
+F18:2CT,"C18:2 cis trans",g,"fatty acid 18:2 cis + trans"
+F18:2TC,"C18:2 trans cis",g,"fatty acid 18:2 trans + cis"
+F18:2R,"C18:2 overigen",g,"fatty acid 18:2 remainder"
+F18:3CN3,"C18:3 n-3 cis (ALA)",g,"fatty acid 18:3 n-3 all-cis"
+F18:3CN6,"C18:3 n-6 cis",g,"fatty acid 18:3 n-6 all-cis"
+F18:4CN3,"C18:4 n-3 cis",g,"fatty acid 18:4 n-3 all-cis"
+F20:2CN6,"C20:2 n-6 cis",g,"fatty acid 20:2 n-6 cis,cis"
+F20:3CN9,"C20:3 n-9 cis",g,"fatty acid 20:3 n-9 all-cis"
+F20:3CN6,"C20:3 n-6 cis",g,"fatty acid 20:3 n-6 all-cis"
+F20:3CN3,"C20:3 n-3 cis",g,"fatty acid 20:3 n-3 all-cis"
+F20:4CN6,"C20:4 n-6 cis",g,"fatty acid 20:4 n-6 all-cis"
+F20:4CN3,"C20:4 n-3 cis",g,"fatty acid 20:4 n-3 all-cis"
+F20:5CN3,"C20:5 n-3 cis (EPA)",g,"fatty acid 20:5 n-3 all-cis"
+F21:5CN3,"C21:5 n-3 cis (HPA)",g,"fatty acid 21:5 n-3 all-cis"
+F22:2CN6,"C22:2 n-6 cis",g,"fatty acid 22:2 n-6 cis,cis"
+F22:2CN3,"C22:2 n-3 cis",g,"fatty acid 22:2 n-3 cis,cis"
+F22:3CN3,"C22:3 n-3 cis",g,"fatty acid 22:3 n-3 all-cis"
+F22:4CN6,"C22:4 n-6 cis",g,"fatty acid 22:4 n-6 all-cis"
+F22:5CN6,"C22:5 n-6 cis",g,"fatty acid 22:5 n-6 all-cis"
+F22:5CN3,"C22:5 n-3 cis (DPA)",g,"fatty acid 22:5 n-3 all-cis"
+F22:6CN3,"C22:6 n-3 cis (DHA)",g,"fatty acid 22:6 n-3 all-cis"
+F24:2CN6,"C24:2 n-6 cis",g,"fatty acid 24:2 n-6 cis,cis"
+FAPUXR,"Movz rest c+t",g,"fatty acids, polyunsaturated, remainder"
+F10:1TRS,"C10:1 trans totaal",g,"fatty acid 10:1 trans"
+F12:1TRS,"C12:1 trans totaal",g,"fatty acid 12:1 trans"
+F14:1TRS,"C14:1 trans totaal",g,"fatty acid 14:1 trans"
+F16:1TRS,"C16:1 trans totaal",g,"fatty acid 16:1 trans"
+F18:1TRS,"C18:1 trans totaal",g,"fatty acid 18:1 total trans"
+F18:2TTN6,"C18:2 n-6 trans",g,"fatty acid 18:2 n-6 trans,trans"
+F18:3TTTN3,"C18:3n-3 trans",g,"fatty acid 18:3 n-3 all-trans"
+F20:1TRS,"C20:1 trans totaal",g,"fatty acid 20:1 trans"
+F20:2TT,"C20:2 n-6 trans",g,"fatty acid 20:2 trans,trans"
+F22:1TRS,"C22:1 trans totaal",g,"fatty acid 22:1 trans"
+F24:1TRS,"C24:1 trans totaal",g,"fatty acid 24:1 trans"
+FAMSTXR,"Eovz trans rest",g,"fatty acids, monounsaturated, trans, remainder"
+FAUN,"Niet-geidentificeerde vetzuren",g,"fatty acid, unidentified"
+CHORL,Cholesterol,mg,cholesterol
+NA,Natrium,mg,sodium
+K,Kalium,mg,potassium
+CA,Calcium,mg,calcium
+P,Fosfor,mg,phosphorus
+MG,Magnesium,mg,magnesium
+FE,"IJzer totaal",mg,"iron, total"
+HAEM,"IJzer haem",mg,"iron, haem"
+NHAEM,"IJzer non haem",mg,"iron, non-haem"
+CU,Koper,mg,copper
+SE,Selenium,µg,"selenium, total"
+ZN,Zink,mg,zinc
+ID,Jodium,µg,iodide
+ASH,As,g,ash
+VITA_RAE,"Retinol activiteit equiv.(RAE)",µg,"Retinol activiteit equiv.(RAE)"
+VITA_RE,"Retinol equivalenten (RE)",µg,"Retinol equivalenten (RE)"
+RETOL,Retinol,µg,"retinol (preformed vitamin A)"
+CARTBTOT,Beta-caroteen,µg,"beta-carotene, total"
+CARTA,Alfa-caroteen,µg,alpha-carotene
+LUTN,Luteine,µg,lutein
+ZEA,Zeaxanthine,µg,zeaxanthin
+CRYPXB,Beta-cryptoxanthine,µg,beta-cryptoxanthin
+LYCPN,Lycopeen,µg,lycopene
+VITD,"Vitamine D totaal",µg,"vitamin D"
+CHOCALOH,"25-hydroxy-vitamine D",µg,25-hydroxycholecalciferol
+CHOCAL,"Cholecalciferol - vit D3",µg,cholecalciferol
+VITE,"Vitamine E totaal",mg,"vitamin E; alpha-tocopherol equiv from E vitamer activities"
+TOCPHA,Alfa-tocoferol,mg,alpha-tocopherol
+TOCPHB,Beta-tocoferol,mg,beta-tocopherol
+TOCPHG,Gamma-tocoferol,mg,gamma-tocopherol
+TOCPHD,Delta-tocoferol,mg,delta-tocopherol
+VITK,"Vitamine K totaal",µg,"vitamin K, total"
+VITK1,"Vitamine K1",µg,"vitamin K-1"
+VITK2,"Vitamine K2",µg,"vitamin K-2"
+THIA,"Vitamine B1",mg,thiamin
+RIBF,"Vitamine B2",mg,riboflavin
+VITB6,"Vitamine B6",mg,"vitamin B-6, total"
+VITB12,"Vitamine B12",µg,"vitamin B-12"
+NIA,Nicotinezuur,mg,"niacin, preformed"
+FOL,"Folaat equivalenten",µg,"folate, total"
+FOLFD,Folaat,µg,"folate, food"
+FOLAC,Foliumzuur,µg,"folic acid, synthetic"
+VITC,"Vitamine C",mg,"vitamin C"

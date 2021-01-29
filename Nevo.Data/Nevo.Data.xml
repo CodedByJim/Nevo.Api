@@ -1,0 +1,768 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nevo.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Nevo.Data.BasePaginatedQueryArguments`1">
+            <summary>
+                Default properties for paginated queries.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.BasePaginatedQueryArguments`1.Rows">
+            <summary>
+                Number of rows to return.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.BasePaginatedQueryArguments`1.Page">
+            <summary>
+                The page to return.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.BasePaginatedQueryArguments`1.Offset">
+            <summary>
+                The calculated offset.
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Count`1">
+            <summary>
+                Generic count query arguments for a certain entity.
+            </summary>
+            <typeparam name="T">The entity type to count.</typeparam>
+        </member>
+        <member name="T:Nevo.Data.EquatableList`1">
+            <summary>
+                List that can be equated.
+            </summary>
+            <typeparam name="T">Element type of the list.</typeparam>
+        </member>
+        <member name="F:Nevo.Data.EquatableList`1._listImplementation">
+            <summary>
+                Inner list.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.#ctor">
+            <summary>
+                Create a new <see cref="T:Nevo.Data.EquatableList`1" />.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.#ctor(System.Collections.Generic.IList{`0})">
+            <summary>
+                Create a new <see cref="T:Nevo.Data.EquatableList`1" /> having an initial underlying collection.
+            </summary>
+            <param name="listImplementation">The implementation of the underlying list.</param>
+            <exception cref="T:System.ArgumentNullException">When <paramref name="listImplementation"/> is null.</exception>
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.Equals(Nevo.Data.EquatableList{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.Contains(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.CopyTo(`0[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="P:Nevo.Data.EquatableList`1.Count">
+            <inheritdoc />
+        </member>
+        <member name="P:Nevo.Data.EquatableList`1.IsReadOnly">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.IndexOf(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.Insert(System.Int32,`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.RemoveAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="P:Nevo.Data.EquatableList`1.Item(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.op_Implicit(System.Collections.Generic.List{`0})~Nevo.Data.EquatableList{`0}">
+            <summary>
+                Implicit cast used to quickly convert a List.
+            </summary>
+            <param name="value">The value</param>
+            <returns>A wrapped value</returns>
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.op_Implicit(`0[])~Nevo.Data.EquatableList{`0}">
+            <summary>
+                Implicit cast used to quickly convert an array.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>A wrapped value.</returns>
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.op_Implicit(Nevo.Data.EquatableList{`0})~System.Collections.Generic.List{`0}">
+            <summary>
+                Implicit cast used to quickly unwrap the value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>A wrapped value.</returns>
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.op_Equality(Nevo.Data.EquatableList{`0},Nevo.Data.EquatableList{`0})">
+            <summary>
+                Equals operator.
+            </summary>
+            <param name="obj1">The first object.</param>
+            <param name="obj2">The second object.</param>
+            <returns>True when equal</returns>
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.op_Inequality(Nevo.Data.EquatableList{`0},Nevo.Data.EquatableList{`0})">
+            <summary>
+                Not equals operator.
+            </summary>
+            <param name="obj1">The first object.</param>
+            <param name="obj2">The second object.</param>
+            <returns>True when not equal.</returns>
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Nevo.Data.EquatableList`1.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Data.Groups.CountProductsByGroup">
+            <summary>
+                Count the products by group query arguments.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Groups.CountProductsByGroup.GroupCode">
+            <summary>
+                The group code.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Groups.CountProductsByGroup.op_Implicit(System.Int32)~Nevo.Data.Groups.CountProductsByGroup">
+            <summary>
+                Implicit cast used to pass the group code as argument.
+            </summary>
+            <param name="groupCode">The group code.</param>
+            <returns>Query arguments object.</returns>
+        </member>
+        <member name="T:Nevo.Data.Groups.CountProductsByGroupQuery">
+            <summary>
+                Count products by group query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Groups.CountProductsByGroupQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new count products by group query.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Groups.GetGroupQuery">
+            <summary>
+                Get a single group.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Groups.GetGroupQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new get group query.
+            </summary>
+            <param name="unitOfWork">The active unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Groups.GetGroupsQuery">
+            <summary>
+                Get all groups.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Groups.GetGroupsQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new get groups query.
+            </summary>
+            <param name="unitOfWork">The active unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Groups.GetProductsByGroup">
+            <summary>
+                Get products by group query arguments.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Groups.GetProductsByGroup.GroupCode">
+            <summary>
+                The group code.
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Groups.GetProductsByGroupQuery">
+            <summary>
+                Gets the products within a group.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Groups.GetProductsByGroupQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Creates a new get group products query.
+            </summary>
+            <param name="unitOfWork">The active unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Groups.Group">
+            <summary>
+                The group.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Groups.Group.Code">
+            <summary>
+                The group code.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Groups.Group.DescriptionEn">
+            <summary>
+                Description in English.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Groups.Group.DescriptionNl">
+            <summary>
+                Description in Dutch.
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Groups.GroupProduct">
+            <summary>
+                Product in a group.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Groups.GroupProduct.Code">
+            <summary>
+                Product code.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Groups.GroupProduct.DescriptionEn">
+            <summary>
+                Product-identity English.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Groups.GroupProduct.DescriptionNl">
+            <summary>
+                Product-identity Dutch (name, cooking method, packaging).
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.ListQuery`2">
+            <summary>
+                Query for multiple results.
+            </summary>
+            <typeparam name="TArguments">Query argument type.</typeparam>
+            <typeparam name="TResult">Query result type.</typeparam>
+        </member>
+        <member name="M:Nevo.Data.ListQuery`2.#ctor(Coded.Core.Data.IUnitOfWork,System.String)">
+            <summary>
+                Create a new list query.
+            </summary>
+            <param name="unitOfWork">The current unit of work.</param>
+            <param name="sql">The sql to execute.</param>
+        </member>
+        <member name="M:Nevo.Data.ListQuery`2.Query(`0,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Data.Nutrients.CountProductsByNutrient">
+            <summary>
+                Count product by nutrient query arguments.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Nutrients.CountProductsByNutrient.NutrientCode">
+            <summary>
+                The nutrient code.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Nutrients.CountProductsByNutrient.op_Implicit(System.String)~Nevo.Data.Nutrients.CountProductsByNutrient">
+            <summary>
+                Implicit cast used to pass the nutrient code as argument.
+            </summary>
+            <param name="nutrientCode">The nutrient code.</param>
+            <returns>Query arguments object.</returns>
+        </member>
+        <member name="T:Nevo.Data.Nutrients.CountProductsByNutrientQuery">
+            <summary>
+                Count products by nutrient query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Nutrients.CountProductsByNutrientQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new <see cref="T:Nevo.Data.Nutrients.CountProductsByNutrientQuery" />.
+            </summary>
+            <param name="unitOfWork">The active unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Nutrients.GetNutrientQuery">
+            <summary>
+                Get nutrients query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Nutrients.GetNutrientQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new <see cref="T:Nevo.Data.Nutrients.GetNutrientQuery" />.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Nutrients.GetNutrientsQuery">
+            <summary>
+                Get all nutrients query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Nutrients.GetNutrientsQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new <see cref="T:Nevo.Data.Nutrients.GetNutrientQuery" />.
+            </summary>
+            <param name="unitOfWork">The unit of work</param>
+        </member>
+        <member name="T:Nevo.Data.Nutrients.GetProductsByNutrient">
+            <summary>
+                Get products by nutrient query arguments.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Nutrients.GetProductsByNutrient.NutrientCode">
+            <summary>
+                The nutrient code.
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Nutrients.GetProductsByNutrientQuery">
+            <summary>
+                Get products by nutrient.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Nutrients.GetProductsByNutrientQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new <see cref="T:Nevo.Data.Nutrients.GetProductsByNutrientQuery" />.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Nutrients.Nutrient">
+            <summary>
+                Nutrient
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Nutrients.Nutrient.Code">
+            <summary>
+                The nutrient code
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Nutrients.Nutrient.NameNl">
+            <summary>
+                The nutrient name in Dutch
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Nutrients.Nutrient.NameEn">
+            <summary>
+                The nutrient name in English
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Nutrients.NutrientProduct">
+            <summary>
+                Percentage of a product.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Nutrients.NutrientProduct.ProductCode">
+            <summary>
+                The product code.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Nutrients.NutrientProduct.SourceId">
+            <summary>
+                The source of this measurement or calculation.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Nutrients.NutrientProduct.Percentage">
+            <summary>
+                The percentage of this component in relation to the total product.
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Primitive`1">
+            <summary>
+                Class used to wrap value types.
+            </summary>
+            <typeparam name="T">The value type.</typeparam>
+        </member>
+        <member name="P:Nevo.Data.Primitive`1.Value">
+            <summary>
+                Value.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Primitive`1.op_Implicit(Nevo.Data.Primitive{`0})~`0">
+            <summary>
+                Implicit cast to the primitive value.
+            </summary>
+            <param name="primitive">The wrapped primitive</param>
+            <returns>The unwrapped value.</returns>
+        </member>
+        <member name="M:Nevo.Data.Primitive`1.op_Implicit(`0)~Nevo.Data.Primitive{`0}">
+            <summary>
+                Implicit cast used to quickly wrap the value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>A wrapped value.</returns>
+        </member>
+        <member name="T:Nevo.Data.Products.CountProductsQuery">
+            <summary>
+                Query that counts all products.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Products.CountProductsQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new count products query.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Products.GetNutrientsByProduct">
+            <summary>
+                Get the nutrients by product.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.GetNutrientsByProduct.ProductCode">
+            <summary>
+                The product code.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Products.GetNutrientsByProduct.op_Implicit(System.Int32)~Nevo.Data.Products.GetNutrientsByProduct">
+            <summary>
+                Implicit cast used to quickly wrap the product code.
+            </summary>
+            <param name="productCode">The product code.</param>
+            <returns>A wrapped value.</returns>
+        </member>
+        <member name="T:Nevo.Data.Products.GetNutrientsByProductQuery">
+            <summary>
+                Get nutrients by product query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Products.GetNutrientsByProductQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new get nutrients by product query.
+            </summary>
+            <param name="unitOfWork">The active unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Products.GetProductQuery">
+            <summary>
+                Get product query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Products.GetProductQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new <see cref="T:Nevo.Data.Products.GetProductQuery" />.
+            </summary>
+            <param name="unitOfWork">The active unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Products.GetProducts">
+            <summary>
+                Get products query arguments.
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Products.GetProductsQuery">
+            <summary>
+                Get products query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Products.GetProductsQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new <see cref="T:Nevo.Data.Products.GetProductsQuery" />.
+            </summary>
+            <param name="unitOfWork">The active unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Products.Product">
+            <summary>
+                Product.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.Code">
+            <summary>
+                Product code.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.GroupCode">
+            <summary>
+                Code of the group this product belongs to.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.GroupDescriptionEn">
+            <summary>
+                Description of the group this product belongs to (English).
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.GroupDescriptionNl">
+            <summary>
+                Description of the group this product belongs to (Dutch).
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.DescriptionEn">
+            <summary>
+                Product-identity English.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.DescriptionNl">
+            <summary>
+                Product-identity Dutch (name, cooking method, packaging).
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.SynonymsEn">
+            <summary>
+                Synonyms in English.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.SynonymsNl">
+            <summary>
+                Synonyms in Dutch.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.CommentsEn">
+            <summary>
+                Extra information (if present).
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.CommentsNl">
+            <summary>
+                Extra information (if present).
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.EnrichedWithEn">
+            <summary>
+                When a product is enriched with one or more nutrient(s) the
+                applicable nutrients are mentioned in this field.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.EnrichedWithNl">
+            <summary>
+                When a product is enriched with one or more nutrient(s) the
+                applicable nutrients are mentioned in this field.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.TraceAmounts">
+            <summary>
+                Trace: some nutrients are present in a very low amount (analyse
+                below detection) in a product; this is shown as trace.
+                A 0,0 is placed as value of the nutrient, so you can calculate with the
+                amount.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.EnergyKcal">
+            <summary>
+                Energy in kcal. Calculated by macro nutrient factors.
+                1 gram protein = 4 kcal
+                1 gram fat = 9 kcal
+                1 gram carbohydrates = 4 kcal
+                1 gram dietary fiber = 2 kcal
+                1 gram alcohol = 7 kcal
+                1 gram polyols = 2.4 kcal
+                1 gram organic acids = 3 kcal
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.Product.EnergyKj">
+            <summary>
+                Energy in kJ. Calculated by macro nutrient factors.
+                1 gram protein = 17 kJ
+                1 gram fat = 37 kJ
+                1 gram carbohydrates = 17 kJ
+                1 gram dietary fiber = 8 kJ
+                1 gram alcohol = 29 kJ
+                1 gram polyols = 10 kJ
+                1 gram organic acids = 13 kj
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Products.ProductNutrient">
+            <summary>
+                Nutrient and percentage measured as reported by source
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.ProductNutrient.NutrientCode">
+            <summary>
+                The nutrient code
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.ProductNutrient.SourceId">
+            <summary>
+                The source of this measurement or calculation
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.ProductNutrient.Percentage">
+            <summary>
+                The percentage of this component in relation to the total product
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.ProductNutrient.NameNl">
+            <summary>
+                Nutrient name in Dutch
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Products.ProductNutrient.NameEn">
+            <summary>
+                Nutrient name in English
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.SelectAll`1">
+            <summary>
+                Select all arguments
+            </summary>
+            <typeparam name="T">The type to select all of</typeparam>
+        </member>
+        <member name="T:Nevo.Data.SelectOne`2">
+            <summary>
+                Select one entity of type <typeparamref name="T" />
+            </summary>
+            <typeparam name="T">The entity type</typeparam>
+            <typeparam name="TId">The id type</typeparam>
+        </member>
+        <member name="P:Nevo.Data.SelectOne`2.Id">
+            <summary>
+                The id of the entity to retrieve
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.SelectOne`2.op_Implicit(`1)~Nevo.Data.SelectOne{`0,`1}">
+            <summary>
+                Implicit cast used to quickly wrap the Id
+            </summary>
+            <param name="id">The id</param>
+            <returns>A wrapped value</returns>
+        </member>
+        <member name="T:Nevo.Data.SingleQuery`2">
+            <summary>
+                Query with a single record as result
+            </summary>
+            <typeparam name="TArguments">The query argument type</typeparam>
+            <typeparam name="TResult">The result type</typeparam>
+        </member>
+        <member name="M:Nevo.Data.SingleQuery`2.#ctor(Coded.Core.Data.IUnitOfWork,System.String)">
+            <summary>
+                Create a new single query
+            </summary>
+            <param name="unitOfWork">The active</param>
+            <param name="sql">The sql-query to execute.</param>
+        </member>
+        <member name="M:Nevo.Data.SingleQuery`2.Query(`0,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:Nevo.Data.Sources.CountNutrientsBySource">
+            <summary>
+                Count nutrient values by source query arguments.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Sources.CountNutrientsBySource.SourceId">
+            <summary>
+                The id of the source.
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Sources.CountNutrientsBySourceQuery">
+            <summary>
+                Count nutrient values by source query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Sources.CountNutrientsBySourceQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new <see cref="T:Nevo.Data.Sources.CountNutrientsBySourceQuery" />.
+            </summary>
+            <param name="unitOfWork">The active unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Sources.CountSourcesQuery">
+            <summary>
+                Get sources query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Sources.CountSourcesQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new count sources query.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Sources.GetNutrientsBySource">
+            <summary>
+                Get nutrients by source query arguments.
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Sources.GetNutrientsBySource.SourceId">
+            <summary>
+                The product code.
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Sources.GetNutrientsBySourceQuery">
+            <summary>
+                Get nutrient by source query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Sources.GetNutrientsBySourceQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a new get nutrients by source query.
+            </summary>
+            <param name="unitOfWork">The active unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Sources.GetSourceQuery">
+            <summary>
+                Get source query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Sources.GetSourceQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Get source query.
+            </summary>
+            <param name="unitOfWork">The active unit of work</param>
+        </member>
+        <member name="T:Nevo.Data.Sources.GetSources">
+            <summary>
+                Get sources arguments.
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Sources.GetSourcesQuery">
+            <summary>
+                Get sources query.
+            </summary>
+        </member>
+        <member name="F:Nevo.Data.Sources.GetSourcesQuery.SQL">
+            <summary>
+                SQL query.
+            </summary>
+        </member>
+        <member name="M:Nevo.Data.Sources.GetSourcesQuery.#ctor(Coded.Core.Data.IUnitOfWork)">
+            <summary>
+                Create a get sources query.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+        </member>
+        <member name="T:Nevo.Data.Sources.Source">
+            <summary>
+                Source
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Sources.Source.Id">
+            <summary>
+                Id
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Sources.Source.SourceEn">
+            <summary>
+                Source in English
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Sources.Source.SourceNl">
+            <summary>
+                Source in Dutch
+            </summary>
+        </member>
+        <member name="T:Nevo.Data.Sources.SourceNutrient">
+            <summary>
+                Nutrient reported in source
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Sources.SourceNutrient.NutrientCode">
+            <summary>
+                The nutrient code
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Sources.SourceNutrient.ProductCode">
+            <summary>
+                The product code
+            </summary>
+        </member>
+        <member name="P:Nevo.Data.Sources.SourceNutrient.Percentage">
+            <summary>
+                The percentage of this component in relation to the total product
+            </summary>
+        </member>
+    </members>
+</doc>
